@@ -1,0 +1,52 @@
+<!-- Created & Designed by: Marc Ferrándiz Borràs -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+<link rel="shortcut icon" href="http://i59.tinypic.com/mvlyd4.jpg" />
+
+<!-- Javascript -->
+<script  type="text/javascript" src="canvas.js" ></script>
+
+<!-- Jquery-->
+<script src="http://code.jquery.com/jquery-2.0.3.min.js" ></script>
+<!–[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]–>
+
+<style type="text/css">
+	#container{
+		
+		max-width: 465px;
+		max-height: 722px;
+		margin-right: auto;
+		margin-left: auto;
+		
+	}
+	#game{
+		position: relative;
+		max-width: 100%;
+	}
+	#screen{
+		position: relative;
+		z-index: 10;
+		max-width: 47.5068%;
+		padding-left: 27.5%;
+		margin-top: -134.7%;
+	}
+	
+	#canvas{
+		max-width: 100%;		
+	}
+</style>
+</head>
+<body onload="javascript:snakeGame()">
+	<div id="container">
+		<img  id="game" src="GameBoy.png">
+		<div id="screen">
+			<canvas id="canvas"  width="221" height="209" ></canvas>
+		</div>
+	</div>
+</body>
+</html>
+
